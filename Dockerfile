@@ -1,4 +1,4 @@
 FROM scratch
 COPY ./ /
-CMD [ "./showDocs", "-DFOREGROUND" ]
-
+ENV PATH .:$PATH
+CMD [ "showDocs", "-DFOREGROUND" ]
