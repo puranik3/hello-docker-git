@@ -1,3 +1,4 @@
 FROM scratch
 COPY ./ /
-RUN ./showDocs
+CMD [ "./showDocs", "-DFOREGROUND" ]
+
